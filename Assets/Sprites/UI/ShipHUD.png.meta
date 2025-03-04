@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: df222447beeee654c9e444a1e24ce016
+guid: 4086cc861b93dae47918660f7ecb943a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5352589897792668077
-    second: SmallShipCollection_0
+      213: -3178253325083890040
+    second: ShipHUD_0
+  - first:
+      213: -5592281856361713113
+    second: ShipHUD_1
+  - first:
+      213: -3138084366062159361
+    second: ShipHUD_2
+  - first:
+      213: 3287745931828998527
+    second: ShipHUD_3
+  - first:
+      213: -4022111294537517840
+    second: ShipHUD_4
+  - first:
+      213: -131880290094743444
+    second: ShipHUD_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,35 +141,57 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SmallShipCollection_0
+      name: ShipHUD_1
       rect:
         serializedVersion: 2
-        x: 6
-        y: 214
-        width: 35
-        height: 39
+        x: 14
+        y: 78
+        width: 68
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 6, y: 6, z: 6, w: 6}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da1c64e1728384a40800000000000000
-      internalID: 5352589897792668077
+      spriteID: 722b2b3e7493462b0800000000000000
+      internalID: -5592281856361713113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SmallShipCollection_1
+      name: ShipHUD_2
       rect:
         serializedVersion: 2
-        x: 51
-        y: 218
-        width: 48
-        height: 32
+        x: 14
+        y: 30
+        width: 68
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 6, z: 6, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c60070c23977b2ef0800000000000000
+      internalID: -131880290094743444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipHUD_0
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 100
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf5cc555ab6b19e468662b38b23b378f
-      internalID: 695377840
+      spriteID: c91633f3caf24f945ad8544edb2a4be1
+      internalID: -3178253325083890040
       vertices: []
       indices: 
       edges: []
@@ -173,7 +210,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 655436dbf17ef4049864f23ee54b6c31
+    spriteID: 9ec49acc8d786844eb335a6fe851c0bb
     internalID: 0
     vertices: []
     indices: 
@@ -183,8 +220,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SmallShipCollection_0: 5352589897792668077
-      SmallShipCollection_1: 695377840
+      ShipHUD_0: -3178253325083890040
+      ShipHUD_1: -5592281856361713113
+      ShipHUD_2: -131880290094743444
+      ShipHUD_3: 3287745931828998527
+      ShipHUD_4: -4022111294537517840
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

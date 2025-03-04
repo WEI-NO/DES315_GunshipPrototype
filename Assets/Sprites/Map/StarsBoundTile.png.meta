@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: df222447beeee654c9e444a1e24ce016
+guid: be9f023a32b607447b86064570b1007b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5352589897792668077
-    second: SmallShipCollection_0
+      213: -1266539167962310072
+    second: StarsBoundTile_0
+  - first:
+      213: -2312186311943397496
+    second: StarsBoundTile_1
+  - first:
+      213: -1869247501915771362
+    second: StarsBoundTile_2
+  - first:
+      213: -8513988652152099452
+    second: StarsBoundTile_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +55,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -126,45 +135,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SmallShipCollection_0
+      name: StarsBoundTile_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 214
-        width: 35
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: da1c64e1728384a40800000000000000
-      internalID: 5352589897792668077
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SmallShipCollection_1
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 218
-        width: 48
-        height: 32
+        x: 12
+        y: 44
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bf5cc555ab6b19e468662b38b23b378f
-      internalID: 695377840
+      spriteID: 84adc7f46595c6ee0800000000000000
+      internalID: -1266539167962310072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StarsBoundTile_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 44
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88fd71ebcc679efd0800000000000000
+      internalID: -2312186311943397496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StarsBoundTile_2
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e260bfc491f06e0800000000000000
+      internalID: -1869247501915771362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StarsBoundTile_3
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 12
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d64ce0e6c38d980800000000000000
+      internalID: -8513988652152099452
       vertices: []
       indices: 
       edges: []
@@ -173,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 655436dbf17ef4049864f23ee54b6c31
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -183,8 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SmallShipCollection_0: 5352589897792668077
-      SmallShipCollection_1: 695377840
+      StarsBoundTile_0: -1266539167962310072
+      StarsBoundTile_1: -2312186311943397496
+      StarsBoundTile_2: -1869247501915771362
+      StarsBoundTile_3: -8513988652152099452
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

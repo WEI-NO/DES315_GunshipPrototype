@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: df222447beeee654c9e444a1e24ce016
+guid: 3249907e6f0c1ee44ac022b281ed957f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5352589897792668077
-    second: SmallShipCollection_0
+      213: 1814942066686054703
+    second: ShipProfilePicture_0
+  - first:
+      213: 2053818733662739108
+    second: ShipProfilePicture_1
+  - first:
+      213: -624651096145339730
+    second: ShipProfilePicture_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SmallShipCollection_0
+      name: ShipProfilePicture_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 214
-        width: 35
-        height: 39
+        x: 61
+        y: 74
+        width: 38
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +147,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da1c64e1728384a40800000000000000
-      internalID: 5352589897792668077
+      spriteID: f215cb49138ff2910800000000000000
+      internalID: 1814942066686054703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SmallShipCollection_1
+      name: ShipProfilePicture_1
       rect:
         serializedVersion: 2
-        x: 51
-        y: 218
-        width: 48
-        height: 32
+        x: 61
+        y: 27
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa9205b141a08c10800000000000000
+      internalID: 2053818733662739108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipProfilePicture_2
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 74
+        width: 38
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf5cc555ab6b19e468662b38b23b378f
-      internalID: 695377840
+      spriteID: e345d3d9cbc95b94e90781b515123703
+      internalID: 1196346228
       vertices: []
       indices: 
       edges: []
@@ -173,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 655436dbf17ef4049864f23ee54b6c31
+    spriteID: c2fb23d498455fc45b7301f5009e133f
     internalID: 0
     vertices: []
     indices: 
@@ -183,8 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SmallShipCollection_0: 5352589897792668077
-      SmallShipCollection_1: 695377840
+      ShipProfilePicture_0: 1814942066686054703
+      ShipProfilePicture_1: 2053818733662739108
+      ShipProfilePicture_2: 1196346228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

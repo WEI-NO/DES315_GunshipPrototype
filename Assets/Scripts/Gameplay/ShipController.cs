@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class JerkBased2DMovement : MonoBehaviour
+public class ShipController : MonoBehaviour
 {
     [Header("Components")]
     private Rigidbody2D rb;
+    public SpriteRenderer shipSprite;
 
     [Header("Physics Properties - WS")]
     #region Forward and Backward
@@ -46,6 +47,12 @@ public class JerkBased2DMovement : MonoBehaviour
     [Header("Controls")]
     public float YInput = 0;
     public float XInput = 0;
+
+    [Header("Properties")]
+    public float VelocityProgress;
+
+    [Header("Ship Information")]
+    public string ShipName = "Ship Name";
 
     private void Awake()
     {
@@ -106,7 +113,7 @@ public class JerkBased2DMovement : MonoBehaviour
         Vector2 faceDirection = transform.up;
 
         // Jerk
-        Vector2 jerkValue = Time.fixedDeltaTime * _Jerk * YInput;
+        Vector2 jerkValue = Time.fixedDeltaTime * _Jerk * YInput * faceDirection;
 
         // Acceleration
         _Acceleration += jerkValue;
@@ -118,8 +125,10 @@ public class JerkBased2DMovement : MonoBehaviour
         _Velocity += accelerationValue;
         _Velocity -= _Velocity * _Friction * Time.fixedDeltaTime;
         _Velocity = Vector2.ClampMagnitude(_Velocity, _MaxSpeed);
+        VelocityProgress = _Velocity.magnitude / _MaxSpeed;
 
-        rb.linearVelocity = _Velocity * faceDirection;
+        rb.linearVelocity = _Velocity;
+        
     }
 
     private void Movement_Rotation()
