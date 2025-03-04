@@ -5,7 +5,8 @@ public class JerkBased2DMovement : MonoBehaviour
     [Header("Components")]
     private Rigidbody2D rb;
 
-    [Header("Physics Properties")]
+    [Header("Physics Properties - WS")]
+    #region Forward and Backward
     // Limits
     [SerializeField] private float _MaxSpeed; public float MaxSpeed { get { return _MaxSpeed; } private set { } }
     [SerializeField] private float _MaxAcceleration; public float MaxAcceleration { get { return _MaxAcceleration; } private set { } }
@@ -20,9 +21,31 @@ public class JerkBased2DMovement : MonoBehaviour
     [SerializeField] private Vector2 _Acceleration; public Vector2 Acceleration { get { return _Acceleration; } private set { } }
     // Velocity
     [SerializeField] private Vector2 _Velocity; public Vector2 Velocity { get { return _Velocity; } private set { } }
+    #endregion forward and backward
+
+    [Header("Physics Properties - AD")]
+    #region Angular
+
+    // Limits
+    [SerializeField] private float _AngularMaxSpeed; public float AngularMaxSpeed { get { return _AngularMaxSpeed; } private set { } }
+    [SerializeField] private float _AngularMaxAcceleration; public float AngularMaxAcceleration { get { return _AngularMaxAcceleration; } private set { } }
+    // Friction
+    [SerializeField] private float _AngularFriction; public float AngularFriction { get { return _AngularFriction; } private set { } }
+
+    [SerializeField] private float _AngularEngineDamping; public float AngularEngineDamping { get { return _AngularEngineDamping; } private set { } }
+
+    // Jerk
+    [SerializeField] private float _AngularJerk; public float AngularJerk { get { return _AngularJerk; } private set { } }
+    // Acceleration
+    [SerializeField] private float _AngularAcceleration; public float AngularAcceleration { get { return _AngularAcceleration; } private set { } }
+    // Velocity
+    [SerializeField] private float _AngularVelocity; public float AngularVelocity { get { return _AngularVelocity; } private set { } }
+
+    #endregion angular
 
     [Header("Controls")]
     public float YInput = 0;
+    public float XInput = 0;
 
     private void Awake()
     {
@@ -37,11 +60,13 @@ public class JerkBased2DMovement : MonoBehaviour
     void Update()
     {
         DetectInput_WS();
+        DetectInput_AD();
     }
 
     private void FixedUpdate()
     {
         Movement_FrontBack();
+        Movement_Rotation();
     }
 
     #region Input 
@@ -56,6 +81,20 @@ public class JerkBased2DMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
         {
             YInput -= 1;
+        }
+    }
+
+    private void DetectInput_AD()
+    {
+        XInput = 0;
+        if (Input.GetKey(KeyCode.A))
+        {
+            XInput += 1;
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            XInput -= 1;
         }
     }
     #endregion input
@@ -81,6 +120,25 @@ public class JerkBased2DMovement : MonoBehaviour
         _Velocity = Vector2.ClampMagnitude(_Velocity, _MaxSpeed);
 
         rb.linearVelocity = _Velocity * faceDirection;
+    }
+
+    private void Movement_Rotation()
+    {
+        // Jerk
+        float jerkValue = Time.fixedDeltaTime * _AngularJerk * XInput;
+
+        // Acceleration
+        _AngularAcceleration += jerkValue;
+        _AngularAcceleration -= _AngularAcceleration * _AngularEngineDamping * Time.fixedDeltaTime;
+        _AngularAcceleration = Mathf.Clamp(_AngularAcceleration, -_AngularMaxAcceleration, _AngularAcceleration);
+
+        float accelerationValue = _AngularAcceleration;
+        // Velocity
+        _AngularVelocity += accelerationValue;
+        _AngularVelocity -= _AngularVelocity * _Friction * Time.fixedDeltaTime;
+        _AngularVelocity = Mathf.Clamp(_AngularVelocity, -_MaxSpeed, _MaxSpeed);
+
+        transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + _AngularVelocity);
     }
 
     #endregion physics
