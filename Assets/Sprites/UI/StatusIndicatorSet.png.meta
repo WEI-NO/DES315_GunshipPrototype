@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: df222447beeee654c9e444a1e24ce016
+guid: 11023e0dfd513014496d3aad54592545
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5352589897792668077
-    second: SmallShipCollection_0
+      213: 8995022584401187311
+    second: StatusIndicatorSet_0
+  - first:
+      213: 7317730970517720061
+    second: StatusIndicatorSet_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SmallShipCollection_0
+      name: StatusIndicatorSet_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 214
-        width: 35
-        height: 39
+        x: 0
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,52 +144,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da1c64e1728384a40800000000000000
-      internalID: 5352589897792668077
+      spriteID: fe159d1026db4dc70800000000000000
+      internalID: 8995022584401187311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SmallShipCollection_1
+      name: StatusIndicatorSet_1
       rect:
         serializedVersion: 2
-        x: 51
-        y: 218
-        width: 48
-        height: 32
+        x: 16
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bf5cc555ab6b19e468662b38b23b378f
-      internalID: 695377840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SmallShipCollection_2
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 193
-        width: 42
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fca5af328c8e5af4784140f64b822654
-      internalID: -1117941732
+      spriteID: dfb4593fb8dcd8560800000000000000
+      internalID: 7317730970517720061
       vertices: []
       indices: 
       edges: []
@@ -195,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 655436dbf17ef4049864f23ee54b6c31
+    spriteID: 2d5a456fb714ac14abbf58a2c7b0b82b
     internalID: 0
     vertices: []
     indices: 
@@ -205,9 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SmallShipCollection_0: 5352589897792668077
-      SmallShipCollection_1: 695377840
-      SmallShipCollection_2: -1117941732
+      StatusIndicatorSet_0: 8995022584401187311
+      StatusIndicatorSet_1: 7317730970517720061
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
